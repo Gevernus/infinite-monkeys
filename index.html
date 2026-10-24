@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
   <title>Infinite Monkeys</title>
-  <script type="module" crossorigin src="./assets/index-CIck8LOJ.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-aqWXbkgC.css">
+  <script type="module" crossorigin src="./assets/index-Bgbl1WKZ.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-Bjt0HqQY.css">
 </head>
 <body class="intro no-ups">
   <div id="app">
@@ -17,6 +17,7 @@
         <div class="book-line"><span id="bookTitle">The Sonnets</span> <span class="pg">page <b id="pageNo">1</b> / <span id="pageCount">154</span></span></div>
         <div class="bar"><i id="bookBar"></i></div>
       </div>
+      <div id="boosts" class="boosts"></div>
       <button id="house" class="pill house" type="button" hidden>New house</button>
       <button id="upsBtn" class="pill" type="button">Upgrades <span id="upsBadge" class="badge" hidden>0</span></button>
       <button id="mute" class="pill icon" type="button" aria-label="Sound">Sound on</button>
@@ -36,6 +37,7 @@
         </div>
       </div>
       <button id="firstMonkey" class="first-monkey" type="button" hidden>Buy a monkey · $15</button>
+      <button id="parcel" class="parcel" type="button" hidden><i class="crate"></i><span>Parcel <b id="parcelN">×1</b></span></button>
       <div id="hint" class="hint">tap the keys or press any key</div>
       <div id="pops" class="pops"></div>
     </section>
@@ -57,6 +59,8 @@
       <div class="row"><button id="modalNo" class="pill" type="button">Not yet</button><button id="modalYes" class="buy wide" type="button"><b>Found it</b></button></div>
     </div>
   </div>
+  <button id="banana" class="banana" type="button" hidden aria-label="Golden banana"></button>
+  <div id="reveal" class="reveal" hidden><div class="rbox"><i class="crate big"></i><div class="rtier"></div><div class="rtext"></div></div></div>
   <div id="toast" class="toast" hidden></div>
 </body>
 </html>
