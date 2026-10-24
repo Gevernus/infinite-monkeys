@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+  <title>Infinite Monkeys</title>
+  <script type="module" crossorigin src="./assets/index-BuIaWHeb.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-aqWXbkgC.css">
+</head>
+<body class="intro no-ups">
+  <div id="app">
+    <header id="hud">
+      <div class="brand">Infinite<br>Monkeys</div>
+      <div class="stat"><span class="k">Money</span><b id="money">$0</b></div>
+      <div class="stat"><span class="k">Words / sec</span><b id="speed">0</b></div>
+      <div class="book">
+        <div class="book-line"><span id="bookTitle">The Sonnets</span> <span class="pg">page <b id="pageNo">1</b> / <span id="pageCount">154</span></span></div>
+        <div class="bar"><i id="bookBar"></i></div>
+      </div>
+      <button id="house" class="pill house" type="button" hidden>New house</button>
+      <button id="upsBtn" class="pill" type="button">Upgrades <span id="upsBadge" class="badge" hidden>0</span></button>
+      <button id="mute" class="pill icon" type="button" aria-label="Sound">Sound on</button>
+    </header>
+
+    <section id="desk" aria-label="Your typewriter">
+      <div id="paper" class="paper" role="button" tabindex="0" aria-label="The page being typed">
+        <div class="paper-head"><span id="pageHead">SONNET 1</span><span id="copy"></span></div>
+        <div id="clip" class="lines-clip"><div id="lines" class="lines"></div></div>
+        <div id="flipper" class="flipper" hidden></div>
+      </div>
+      <div id="machine" class="machine">
+        <div id="carriage" class="carriage"><i class="knob"></i><i class="platen"></i><i class="knob"></i></div>
+        <div class="body">
+          <div id="keys" class="keys"></div>
+          <button id="type" class="space" type="button">TYPE</button>
+        </div>
+      </div>
+      <button id="firstMonkey" class="first-monkey" type="button" hidden>Buy a monkey · $15</button>
+      <div id="hint" class="hint">tap the keys or press any key</div>
+      <div id="pops" class="pops"></div>
+    </section>
+
+    <section id="levels" aria-label="Levels"></section>
+
+    <aside id="ups" aria-label="Upgrades">
+      <div class="ups-head"><h2>Upgrades</h2><span id="upsCount" class="muted"></span><button id="upsClose" class="pill" type="button">Close</button></div>
+      <div id="upList" class="up-grid"></div>
+      <p id="upNext" class="muted"></p>
+      <div id="houseCard" class="house-card"></div>
+    </aside>
+  </div>
+  <div id="modal" class="modal" hidden>
+    <div class="box">
+      <h2>Found a new publishing house?</h2>
+      <p>Your monkeys, desks, levels, upgrades and money start over. The fame of your publishing houses stays:</p>
+      <p class="gain" id="modalGain">+3 fame: everything types +30% faster</p>
+      <div class="row"><button id="modalNo" class="pill" type="button">Not yet</button><button id="modalYes" class="buy wide" type="button"><b>Found it</b></button></div>
+    </div>
+  </div>
+  <div id="toast" class="toast" hidden></div>
+</body>
+</html>
