@@ -1,8 +1,8 @@
-# Infinite Monkeys — prototype
+# Monkey Clicker
 
 Play: https://gevernus.github.io/infinite-monkeys/
 
-An idle clicker: monkeys type Shakespeare page by page, the publisher buys every page, money hires more monkeys,
+An idle clicker: you type Shakespeare's epitaph, hire a monkey, and monkeys type the rest of Shakespeare page by page; the publisher buys every page, money hires more monkeys,
 desks, overseers, office floors… up to a galaxy of monkeys. Prototype 1.1, built for a game-jam style challenge.
 
 - Start over: add `?reset=1` to the address. Page price by print runs: `?price=tirage`.
